@@ -70,7 +70,7 @@ Validator.isPasswordComfirm = function (selector,passwordComfirm) {
     return {
         selector:selector,
         test:function (value) {
-            return  value === passwordComfirm() ? undefined : 'Mật khẩu không chính xác';
+            return  value === passwordComfirm() ? undefined : 'Mật khẩu nhập lại không chính xác';
         }
     }
 }
